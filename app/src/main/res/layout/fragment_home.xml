@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorWhite"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.e.ecommerce.fragment.HomeFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/home_screen"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:visibility="visible" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginBottom="@dimen/imageViewBottomMargin"
+            android:id="@+id/recyclerViewEvent"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="@dimen/imageViewBottomMargin"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:indeterminateTint="@color/colorAccent"
+            android:indeterminateTintMode="src_atop"
+            android:padding="10dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/newArrival"
+            android:scaleType="fitXY"
+            android:src="@drawable/arivels"
+            android:layout_marginBottom="@dimen/imageViewBottomMargin"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginBottom="@dimen/imageViewBottomMargin"
+            android:id="@+id/recyclerViewFooter"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginBottom="@dimen/imageViewBottomMargin"
+            android:id="@+id/recyclerViewFooterSeasonCollection"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginBottom="@dimen/imageViewBottomMargin"
+            android:id="@+id/recycler_season_collection"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/seasonCollection"
+            android:layout_marginBottom="@dimen/imageViewBottomMargin"
+            android:visibility="gone"
+            android:scaleType="fitXY"
+            android:src="@drawable/seasn"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp" />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="@dimen/imageViewBottomMargin"
+            android:visibility="gone" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginBottom="@dimen/imageViewBottomMargin"
+            android:id="@+id/recycler_special_offers"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/imageViewBottomMargin"
+            android:layout_weight="2"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/offerslider"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/specialSales"
+                android:padding="35dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="-20dp"
+                android:visibility="visible"
+                android:scaleType="fitCenter"
+                android:src="@drawable/offe_one"
+                android:layout_width="100dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/specialOffer"
+                android:padding="35dp"
+                android:layout_weight="1"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="-20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/offer_two"
+                android:visibility="visible" />
+
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginBottom="@dimen/imageViewBottomMargin"
+            android:id="@+id/recycler_fem_collection"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:visibility="gone"
+            android:scaleType="fitXY"
+            android:src="@drawable/offers"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <ImageView
+            android:visibility="visible"
+            android:scaleType="fitXY"
+            android:src="@drawable/deal_of_the_day"
+            android:layout_width="match_parent"
+            android:layout_height="220dp" />
+
+        <ImageView
+            android:id="@+id/newTrending"
+            android:layout_marginBottom="@dimen/imageViewBottomMargin"
+            android:visibility="visible"
+            android:scaleType="fitXY"
+            android:src="@drawable/trends"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp" />
+
+        <android.support.v4.view.ViewPager
+            android:visibility="gone"
+            android:id="@+id/pager2"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"/>
+
+
+
+        <android.support.v4.view.ViewPager
+            android:visibility="gone"
+            android:id="@+id/pager3"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"/>
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@+id/idLayoutErrorResponse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_hanger" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oops..\nSomething went wong..!"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/idBtnRetry"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="end"
+                android:background="@null"
+                android:gravity="bottom"
+                android:padding="10dp"
+                android:text="Retry"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

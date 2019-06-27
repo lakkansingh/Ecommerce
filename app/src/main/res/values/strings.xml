@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Ecommerce</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="please_enter">Please Enter</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="need_to_implement">Need to Implement</string>
+    <string name="title_home">Home</string>
+    <string name="title_category">Categories</string>
+    <string name="title_offers">offers</string>
+    <string name="e_commerce">E-commerce</string>
+    <string name="notifications">Notification</string>
+    <string name="signout">Log out</string>
+    <string name="profile">Profile</string>
+    <string name="cart">Cart</string>
+    <string name="interests">Wish list</string>
+    <string name="my_bookings">My booking</string>
+    <string name="orders">My orders</string>
+</resources>

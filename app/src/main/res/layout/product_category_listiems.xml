@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e6e6e6">
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:layout_marginRight="10dp"
+        android:id="@+id/idHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/idTextCategoryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorWhite"
+            android:paddingStart="10dp"
+            android:paddingTop="7dp"
+            android:layout_marginRight="60dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="7dp"
+            android:text="Category"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp" />
+
+        <ToggleButton
+            android:visibility="gone"
+            android:id="@+id/idToggleExpand"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/toggle_expand_category"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_productcategoryitems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idHeader"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/idImagOutofStock"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/idHeader"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_outof_stock"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dimen_progress_bar_height_width"
+        android:layout_height="@dimen/dimen_progress_bar_height_width"
+        android:layout_below="@+id/idHeader"
+        android:layout_centerInParent="true"
+        android:layout_margin="40dp"
+        android:layout_marginBottom="10dp"
+        android:indeterminateTint="@color/colorAccent"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="gone" />
+
+</RelativeLayout>

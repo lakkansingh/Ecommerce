@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/search_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:weightSum="11"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <SearchView
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_pink_boder"
+                android:searchIcon="@null"
+                android:searchHintIcon="@null"
+                android:focusable="true"
+                android:layout_weight="9.5"
+                android:id="@+id/idInputSearchMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorWhite" />
+
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:id="@+id/idBtnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:src="@drawable/ic_search" />
+            <CheckBox
+                android:visibility="gone"
+                android:layout_weight="0"
+                android:id="@+id/check_onSale"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical"
+                android:paddingBottom="5dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="0"
+                android:text="@string/title_offers"
+                android:layout_gravity="start"
+                android:gravity="start|center_vertical"
+                style="@style/textHeadingStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="visible"
+            android:text="" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

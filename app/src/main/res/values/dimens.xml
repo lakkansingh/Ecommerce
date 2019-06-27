@@ -1,0 +1,64 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">110dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!--calendar view dimen-->
+    <dimen name="roboto_calendar_padding">8dp</dimen>
+    <dimen name="roboto_calendar_month_margin_bottom">8dp</dimen>
+    <dimen name="roboto_calendar_week_margin_bottom">5dp</dimen>
+    <dimen name="roboto_calendar_day_of_the_month_background_size">40dp</dimen>
+    <dimen name="roboto_calendar_circle_size">4dp</dimen>
+    <dimen name="roboto_calendar_ring_size">18dp</dimen>
+    <dimen name="roboto_calendar_month_font">16sp</dimen>
+    <dimen name="roboto_calendar_day_of_week_font">16sp</dimen>
+    <dimen name="roboto_calendar_day_of_the_month_font">16sp</dimen>
+    <dimen name="dimen_profile_height_width">100dp</dimen>
+    <dimen name="dimen_cart_height_width">22dp</dimen>
+    <dimen name="dimen_notification_height_width">22dp</dimen>
+    <dimen name="dimen_input_text_height">45dp</dimen>
+    <dimen name="dimen_progress_bar_height_width">30dp</dimen>
+
+    <!-- product_detailview_activity dimens -->
+    <dimen name="search_icon_width_height">24dp</dimen>
+    <dimen name="footer_height">40dp</dimen>
+    <dimen name="product_imageslayout_height">70dp</dimen>
+    <dimen name="productImage_width">60dp</dimen>
+    <dimen name="productImage_height">60dp</dimen>
+
+
+    <dimen name="product_title">15sp</dimen>
+    <dimen name="product_Qty">14sp</dimen>
+    <dimen name="product_price">15sp</dimen>
+    <dimen name="product_avalability">13sp</dimen>
+    <dimen name="btn_show_interest">18sp</dimen>
+    <dimen name="btn_request_home">18sp</dimen>
+
+    <dimen name="textSize_bookHome_DateTime">16sp</dimen>
+    <dimen name="text_interest_layout">14sp</dimen>
+    <dimen name="addressScreen_textHolders">12sp</dimen>
+    <dimen name="text_address_type_size">14sp</dimen>
+    <dimen name="text_userAddress_size">17sp</dimen>
+    <dimen name="dimen_product_width_height">180sp</dimen>
+    <dimen name="dimen_produt_title_size">16sp</dimen>
+    <dimen name="dimen_product_banner_image_height">330dp</dimen>
+    <dimen name="dimen_product_price_size">15sp</dimen>
+    <dimen name="dimens_product_details_button_text_size">14sp</dimen>
+    <dimen name="dimens_user_queries_margin">0dp</dimen>
+    <dimen name="dimens_user_queries_margin_right">0dp</dimen>
+    <dimen name="dimen_grid_product_price_size">15sp</dimen>
+    <dimen name="dimens_product_detail_title">17sp</dimen>
+    <dimen name="details_logo_width">96dp</dimen>
+    <dimen name="details_logo_height">96dp</dimen>
+    <dimen name="dimens_product_detail_add_cart_button_width">130dp</dimen>
+    <dimen name="dimens_login_edittext">250dp</dimen>
+    <dimen name="dimen_catagery_hight">40dp</dimen>
+    <dimen name="dimens_homeScreen_pagerHeight">200</dimen>
+    <dimen name="imageViewBottomMargin">10dp</dimen>
+
+</resources>

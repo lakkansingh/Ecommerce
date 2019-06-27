@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/idNotificationsLayout"
+    android:background="?selectableItemBackgroundBorderless"
+    android:clickable="true">
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/idImgNotifications"
+        android:layout_width="@dimen/dimen_notification_height_width"
+        android:layout_height="@dimen/dimen_notification_height_width"
+        android:contentDescription="@string/notifications"
+        android:src="@drawable/ic_notification" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/idNotificationsCount"
+        android:layout_toEndOf="@+id/idImgNotifications"
+        android:layout_toRightOf="@+id/idImgNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/bg_notifications_count"
+        android:gravity="center"
+        android:minWidth="20sp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:visibility="gone"
+        android:textColor="#ffffffff"
+        android:textSize="12sp" />
+</RelativeLayout>

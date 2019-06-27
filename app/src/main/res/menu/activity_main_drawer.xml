@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/title_home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="@string/profile" />
+
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_menu_cart"
+            android:title="@string/cart" />
+
+
+        <item
+            android:id="@+id/nav_show_interest"
+            android:icon="@drawable/ic_menu_interest"
+            android:title="@string/interests" />
+
+        <item
+            android:id="@+id/nav_bookings"
+            android:visible="false"
+            android:icon="@drawable/ic_menu_my_bookings"
+            android:title="@string/my_bookings" />
+        <item
+            android:id="@+id/nav_show_order"
+            android:icon="@drawable/ic_orders"
+            android:title="@string/orders" />
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:visible="false"
+                android:id="@+id/nav_sign_out"
+                android:icon="@drawable/ic_menu_logout"
+                android:title="@string/signout" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_about"
+                android:title="About" />
+
+        </menu>
+    </item>
+    <item android:title="Version">
+        <menu>
+            <item
+                android:id="@+id/nav_version"
+                android:title="version1" />
+        </menu>
+    </item>
+
+</menu>
